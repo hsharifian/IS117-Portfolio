@@ -1,0 +1,135 @@
+/* DEVELOPER: Hirad Sharifian, IS117-002, Spring 2025 */
+
+/* === General Styling === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  background-color: #f8f9fa; /* light gray background for good contrast */
+  color: #212529; /* Bootstrap's default text color */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Header / Hero Section === */
+header {
+  background-image: linear-gradient(to right, #0d6efd, #0a58ca);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/* === Content Sections === */
+main {
+  padding: 2rem 1rem;
+}
+
+h1, h2, h3 {
+  color: #0a58ca;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* === Floated Image Styling === */
+img.float-md-end, img.float-md-start {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #dee2e6;
+}
+
+/* === Lists === */
+ul, ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.25rem;
+}
+
+ul li, ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* === Footer === */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #212529;
+  color: white;
+  padding: 1rem 0;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #adb5bd;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* === Buttons & Forms === */
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+form label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+form .form-control {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}
+
+/* === Card Tweaks (optional) === */
+.card {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* === Responsive Styling for Small Devices === */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 1rem 1rem;
+  }
+
+  nav .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  footer {
+    font-size: 0.85em;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  img.float-md-end,
+  img.float-md-start {
+    float: none !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

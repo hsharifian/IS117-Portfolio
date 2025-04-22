@@ -1,0 +1,108 @@
+<!-- DEVELOPER: Hirad Sharifian, IS117-002, Spring 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Blog | Hirad Sharifian</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Hirad's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Blog</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="blog.html">Cybersecurity Blog</a></li>
+              <li><a class="dropdown-item" href="#tools">Tools & Tips</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-secondary text-white text-center py-4">
+    <div class="container">
+      <h1>Cybersecurity Blog</h1>
+      <p class="lead">Thoughts, techniques, and insights from the frontlines of cybersecurity.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <!-- Blog Intro -->
+    <section class="mb-5">
+      <p>Welcome to my blog! I use this space to share key insights from my cybersecurity coursework, hands-on experiences, and research. I write for students, professionals, and anyone interested in ethical hacking, digital privacy, and cyber defense strategies.</p>
+    </section>
+
+    <!-- Blog Post 1 -->
+    <section class="mb-5">
+      <h2>🎯 How I Cracked My First Hash with John the Ripper</h2>
+      <p><strong>April 2025</strong></p>
+      <p>John the Ripper is an incredible password cracker. I used it in a class lab to crack MD5 hashes extracted from a Linux shadow file. Here’s the general process I followed:</p>
+      <ul>
+        <li>Extracted password hash from the shadow file</li>
+        <li>Created a simple wordlist</li>
+        <li>Ran John using the wordlist against the hash</li>
+        <li>Cracked the password in under 30 seconds!</li>
+      </ul>
+      <p>Lesson: password complexity truly matters — even the most basic tools can break weak ones quickly.</p>
+    </section>
+
+    <!-- Blog Post 2 -->
+    <section id="tools" class="mb-5">
+      <h2>🧰 Top 5 Tools Every Beginner Hacker Should Learn</h2>
+      <p><strong>March 2025</strong></p>
+      <p>If you’re just starting in cybersecurity, here are five tools you should get comfortable with:</p>
+      <ol>
+        <li><strong>Wireshark</strong>: Network traffic analysis</li>
+        <li><strong>Burp Suite</strong>: Web app vulnerability scanning</li>
+        <li><strong>nmap</strong>: Reconnaissance and network mapping</li>
+        <li><strong>Metasploit</strong>: Exploitation framework</li>
+        <li><strong>John the Ripper</strong>: Password cracking</li>
+      </ol>
+      <p>These tools are widely used in real-world environments and in Capture The Flag (CTF) competitions. Master them early!</p>
+    </section>
+
+    <!-- Blog Post 3 -->
+    <section class="mb-5">
+      <h2>💡 Staying Secure on Public Wi-Fi</h2>
+      <p><strong>February 2025</strong></p>
+      <p>Public Wi-Fi is convenient, but it’s also a common place for attackers to intercept your traffic. Here are a few simple ways to stay secure:</p>
+      <ul>
+        <li>Use a VPN whenever possible</li>
+        <li>Always check for HTTPS on websites</li>
+        <li>Avoid logging into sensitive accounts on public networks</li>
+      </ul>
+      <img src="images/wifi-warning.jpg" class="img-fluid rounded my-3" alt="Laptop warning sign on insecure Wi-Fi">
+      <p>Even a basic man-in-the-middle attack can expose your credentials if you're not careful. Stay safe out there.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Hirad Sharifian. All rights reserved.</p>
+      <p class="mb-0"><a href="#" class="text-white text-decoration-underline">Terms of Service</a> | <a href="#" class="text-white text-decoration-underline">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
